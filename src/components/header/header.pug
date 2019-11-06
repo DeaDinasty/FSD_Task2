@@ -1,3 +1,18 @@
-header
+- var authorized = false
+
+header(class='header')
   div(class='logo')
-    img(src='')
+    img(class='logo__img' src='/assets/imgs/logo.png')
+  nav(class='header-nav')
+    ul(class='header-list')
+      li(class='header-list__item') home
+      li(class='header-list__item') about us
+      li(class='header-list__item header-list__item-arrow') services
+      li(class='header-list__item') careers
+      li(class='header-list__item') news
+      li(class='header-list__item') documentation
+  if authorized
+
+  else 
+    include ../button/button
+    +button('text', 'style1', false)
