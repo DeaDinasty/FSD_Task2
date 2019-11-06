@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+*.swp
+dist/
+/src/public/*.js
+/src/public/*.html
+/src/public/*.css
