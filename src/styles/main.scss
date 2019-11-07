@@ -1,5 +1,5 @@
-@import '~normalize.css/normalize';
 @import '~reset-css/reset';
+@import '~normalize.css/normalize';
 @import './variables.scss';
 
 /* How include css in pug block file? */
@@ -32,6 +32,16 @@
 	font-style: normal;
 }
 
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf') format('truetype'), 
+       url('/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff') format('woff'), 
+       url('/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg') format('svg');
+	font-style: normal;
+}
+
 body {
   font-family: 'Montserrat-Regular';
   font-weight: normal;
@@ -61,4 +71,29 @@ h3 {
   line-height: 15px;
   text-transform: uppercase;
   color: $dark-shade;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }

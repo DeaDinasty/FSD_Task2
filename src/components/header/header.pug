@@ -2,7 +2,7 @@
 
 header(class='header')
   div(class='logo')
-    img(class='logo__img' src='/assets/imgs/logo.png')
+    img(class='logo__img' src='/assets/imgs/logo.svg')
   nav(class='header-nav')
     ul(class='header-list')
       li(class='header-list__item') home
@@ -15,4 +15,5 @@ header(class='header')
 
   else 
     include ../button/button
-    +button('text', 'style1', false)
+    +buttonHollow('login', false)
+    +buttonFill('register', false)

@@ -1,2 +1,10 @@
-mixin button(buttonText, buttonClass, disabled)
-  button.button(class= buttonClass, disabled= disabled) buttonText
+mixin buttonSimple(buttonText, disabled)
+  button.button(class= 'button-simple', disabled= disabled) #{buttonText}
+mixin buttonFill(buttonText, disabled)
+  button.button(class= 'button-fill', disabled= disabled) #{buttonText}
+mixin buttonHollow(buttonText, disabled)
+  button.button(class= 'button-hollow', disabled= disabled) #{buttonText}
+mixin buttonNav(buttonText, disabled)
+  button.button(class= 'button-nav', disabled= disabled) #{buttonText}
+    span.button-nav-arrow
+      i.material-icons arrow_forward
